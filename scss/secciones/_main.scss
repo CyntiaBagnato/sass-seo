@@ -1,0 +1,136 @@
+.main {
+  min-height: 100vh;
+  background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg);
+   iframe { padding: 10px }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%);
+  grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9";
+   img { padding: 10px;
+  width: 200px;
+  border-radius: 30px;}
+
+}
+
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+.img7 {
+  grid-area: img7;
+}
+.img8 {
+  grid-area: img8;
+}
+.img9 {
+  grid-area: img9;
+}
+
+/* Productos */
+
+.grid-container-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-areas:
+    "aside paletaJaclyn paletaDior"
+    "aside paletaNude glossRuby"
+    "aside brochas paletaBrillos";
+  justify-items: stretch;
+  align-items: stretch;
+  animation: backInRight;
+}
+
+.aside {
+  grid-area: aside;
+  font-size: x-large;
+}
+
+.mainProductos { 
+  min-height: 100vh;
+  background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg);
+ img {
+  padding: 10px;
+  border-radius: 30px;
+}
+ aside {
+  grid-area: aside;
+  font-size: x-large;}
+
+}
+
+.paletaJaclyn {
+  grid-area: paletaJaclyn;
+}
+.paletaDior {
+  grid-area: paletaDior;
+}
+.paletaNude {
+  grid-area: paletaNude;
+}
+.glossRuby {
+  grid-area: glossRuby;
+}
+.brochas {
+  grid-area: brochas;
+}
+.paletaBrillos {
+  grid-area: paletaBrillos;
+}
+
+/* Cómo Comprar */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ ol{
+  color: white;
+  font-size: x-large;
+  font-style: oblique;
+  font-variant: small-caps;
+  background-color: #e76b8a77;
+}
+}
+
+/* Contacto */
+
+.main{
+ h1 {
+  display: flex;
+  justify-content: center;}
+ form {
+  display: flex;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;}
+}
+
+/* FAQ */
+
+.faq {
+  font-size: x-large;
+  font-style: oblique;
+  font-variant: small-caps;
+}

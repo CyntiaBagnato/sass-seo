@@ -1,0 +1,227 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.header img {
+  width: 150px; }
+
+.nav-link {
+  color: black;
+  font-weight: 500;
+  background-color: rgba(247, 185, 178, 0.764);
+  border-radius: 10px; }
+
+.footer {
+  background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo_pqrjpq.jpg); }
+  .footer p {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center; }
+  .footer section {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: space-around; }
+
+.main {
+  min-height: 100vh;
+  background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg); }
+  .main iframe {
+    padding: 10px; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%);
+  grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9"; }
+  .grid-container img {
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+.img4 {
+  grid-area: img4; }
+
+.img5 {
+  grid-area: img5; }
+
+.img6 {
+  grid-area: img6; }
+
+.img7 {
+  grid-area: img7; }
+
+.img8 {
+  grid-area: img8; }
+
+.img9 {
+  grid-area: img9; }
+
+/* Productos */
+.grid-container-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-areas: "aside paletaJaclyn paletaDior" "aside paletaNude glossRuby" "aside brochas paletaBrillos";
+  justify-items: stretch;
+  align-items: stretch;
+  animation: backInRight; }
+
+.aside {
+  grid-area: aside;
+  font-size: x-large; }
+
+.mainProductos {
+  min-height: 100vh;
+  background-image: url(https://res.cloudinary.com/dya1efdwp/image/upload/v1662511234/proyecto_3/fondo-main_wgkmhn.jpg); }
+  .mainProductos img {
+    padding: 10px;
+    border-radius: 30px; }
+  .mainProductos aside {
+    grid-area: aside;
+    font-size: x-large; }
+
+.paletaJaclyn {
+  grid-area: paletaJaclyn; }
+
+.paletaDior {
+  grid-area: paletaDior; }
+
+.paletaNude {
+  grid-area: paletaNude; }
+
+.glossRuby {
+  grid-area: glossRuby; }
+
+.brochas {
+  grid-area: brochas; }
+
+.paletaBrillos {
+  grid-area: paletaBrillos; }
+
+/* Cómo Comprar */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main ol {
+    color: white;
+    font-size: x-large;
+    font-style: oblique;
+    font-variant: small-caps;
+    background-color: #e76b8a77; }
+
+/* Contacto */
+.main h1 {
+  display: flex;
+  justify-content: center; }
+
+.main form {
+  display: flex;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center; }
+
+/* FAQ */
+.faq {
+  font-size: x-large;
+  font-style: oblique;
+  font-variant: small-caps; }
+
+/* 4K */
+@media (max-width: 2561px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+    align-items: stretch;
+    justify-items: center; }
+    .grid-container img {
+      width: 400px; }
+  .main p {
+    font-size: xx-large; }
+  .main iframe {
+    width: 500px;
+    height: 250px; }
+  .main form {
+    padding: 80px; }
+  .main .faq {
+    font-size: x-large;
+    font-style: oblique;
+    font-variant: small-caps; }
+  .main .footer {
+    font-size: large; } }
+
+/* LAPTOP */
+@media (max-width: 1500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+    align-items: stretch; }
+    .grid-container img {
+      width: 300px; }
+  .main form {
+    padding: 80px; } }
+
+@media (max-width: 992px) {
+  .nav-link {
+    color: white;
+    font-weight: 500; } }
+
+/* TABLET */
+@media (max-width: 769px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+    align-items: stretch; }
+    .grid-container img {
+      width: 200px; }
+  .aside {
+    font-size: medium; }
+  .main p {
+    font-size: large; } }
+
+/* MOBILE L */
+@media (max-width: 550px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img9";
+    align-items: stretch; }
+  .aside {
+    font-size: small; }
+  .main iframe {
+    width: 300px;
+    height: 150px; }
+  .main p {
+    font-size: large; } }
+
+/* MOBILE M */
+@media (max-width: 376px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img9";
+    align-items: stretch; }
+    .grid-container img {
+      width: 150px; }
+  .main form {
+    align-items: flex-start; }
+  .aside {
+    font-size: small; } }
